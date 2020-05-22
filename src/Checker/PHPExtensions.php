@@ -52,7 +52,7 @@ class PHPExtensions extends Abstracts\Checker {
 		if ( ! empty( $missing_extensions ) ) {
 			$this->add_error( sprintf(
 				// Translators: PHP extensions.
-				_n( 'Missing PHP extension: %s', 'Missing PHP extensions: %s', count( $missing_extensions ), Requirements::$textdomain ),
+				_n( 'Missing PHP extension: %s', 'Missing PHP extensions: %s', count( $missing_extensions ), Requirements::$textdomain, 'wp-requirements' ),
 				implode( ', ', $missing_extensions )
 			) );
 		}

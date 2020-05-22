@@ -254,7 +254,7 @@ class Requirements {
 			echo '<div class="error">';
 
 			// Translators - plugin name.
-			echo '<p>' . sprintf( __( 'The plugin: <strong>%s</strong> cannot be activated.', Requirements::$textdomain ), esc_html( $this->plugin_name ) ) . '</p>';
+			echo '<p>' . sprintf( __( '<strong>%s</strong> cannot be activated.', Requirements::$textdomain, 'wp-requirements' ), esc_html( $this->plugin_name ) ) . '</p>';
 
 			echo '<ul style="list-style: disc; padding-left: 20px;">';
 			foreach ( $this->errors as $error ) {
