@@ -48,7 +48,7 @@ class Theme extends Abstracts\Checker {
 		$theme = wp_get_theme();
 
 		if ( $theme->get_template() !== $value['slug'] ) {
-			$this->add_error( sprintf( __( 'Required theme: %s', Requirements::$textdomain, 'wp-requirements' ), $value['name'] ) );
+			$this->add_error( sprintf( 'Required theme: %s', $value['name'] ) );
 		}
 
 	}

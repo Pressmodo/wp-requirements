@@ -67,7 +67,7 @@ class Plugins extends Abstracts\Checker {
 				$this->add_error(
 					sprintf(
 					// Translators: Plugin name.
-						__( 'Required plugin: %s', Requirements::$textdomain, 'wp-requirements' ),
+						'Required plugin: %s',
 						$plugin_data['name']
 					)
 				);
@@ -75,7 +75,7 @@ class Plugins extends Abstracts\Checker {
 				$this->add_error(
 					sprintf(
 					// Translators: 1. Plugin name, 2. Required version, 3. Used version.
-						__( 'Minimum required version of %1$s plugin is %2$s. Your version is %3$s', Requirements::$textdomain, 'wp-requirements' ),
+						'Minimum required version of %1$s plugin is %2$s. Your version is %3$s',
 						$plugin_data['name'],
 						$plugin_data['version'],
 						$active_plugins_versions[ $plugin_data['file'] ]

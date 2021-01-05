@@ -45,7 +45,7 @@ class WordPress extends Abstracts\Checker {
 		if ( version_compare( $wp_version, $value, '<' ) ) {
 			$this->add_error( sprintf(
 				// Translators: 1. Required WP version, 2. Current WP version.
-				__( 'Minimum required version of WordPress is %1$s. Your version is %2$s', Requirements::$textdomain, 'wp-requirements' ),
+				'Minimum required version of WordPress is %1$s. Your version is %2$s',
 				$value,
 				$wp_version
 			) );
