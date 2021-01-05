@@ -84,8 +84,6 @@ class Requirements {
 			$this->load_default_checkers();
 		}
 
-		load_textdomain( self::$textdomain, dirname( __DIR__ ) . '/languages/wp-requirements-' . get_locale() . '.mo' );
-
 	}
 
 	/**
