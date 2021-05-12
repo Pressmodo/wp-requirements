@@ -1,3 +1,5 @@
+⚠️ Deprecated: please use [https://github.com/alessandrotesoro/wp-diagnostics](https://github.com/alessandrotesoro/wp-diagnostics) as replacement. ⚠️
+
 # WP Requirements
 Simple drop-in library for WordPress plugins and themes to check for core, plugin, theme and php requirements.
 
